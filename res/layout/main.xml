@@ -7,7 +7,15 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World, MainActivity"
+            android:text="Rajawali examples"
+            android:textSize="23sp"
+            android:layout_margin="5dp"
             />
+
+    <Button
+            android:id="@+id/mainCubeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cube"/>
 </LinearLayout>
 
