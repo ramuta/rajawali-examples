@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import com.example.IdeaAppOne.cube.CubeActivity;
+import com.example.IdeaAppOne.plane.PlaneActivity;
 
 public class MainActivity extends Activity {
     private static final String TAG = "MainActivity";
 
     // buttons
     private Button cubeButton;
+    private Button planeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,15 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
                 Intent cubeIntent = new Intent(MainActivity.this, CubeActivity.class);
                 startActivity(cubeIntent);
+            }
+        });
+
+        planeButton = (Button) findViewById(R.id.mainPlaneButton);
+        planeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent planeIntent = new Intent(MainActivity.this, PlaneActivity.class);
+                startActivity(planeIntent);
             }
         });
     }
