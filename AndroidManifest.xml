@@ -15,5 +15,6 @@
 
         <activity android:name=".cube.CubeActivity" />
         <activity android:name=".plane.PlaneActivity"/>
+        <activity android:name=".geodata.GeoDataActivity"/>
     </application>
 </manifest>

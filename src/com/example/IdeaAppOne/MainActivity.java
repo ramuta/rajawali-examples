@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import com.example.IdeaAppOne.cube.CubeActivity;
+import com.example.IdeaAppOne.geodata.GeoDataActivity;
 import com.example.IdeaAppOne.plane.PlaneActivity;
 
 public class MainActivity extends Activity {
@@ -14,6 +15,7 @@ public class MainActivity extends Activity {
     // buttons
     private Button cubeButton;
     private Button planeButton;
+    private Button geoDataButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,15 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
                 Intent planeIntent = new Intent(MainActivity.this, PlaneActivity.class);
                 startActivity(planeIntent);
+            }
+        });
+
+        geoDataButton = (Button) findViewById(R.id.mainGeoButton);
+        geoDataButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, GeoDataActivity.class);
+                startActivity(intent);
             }
         });
     }
